@@ -617,7 +617,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 3840, y: 1200}
+  m_ReferenceResolution: {x: 2314, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   videoFilePaths:
   - C:/Videos/virtualflythrough/01.mp4
   videoTitles:
-  - Urban Zone
+  - R&D ZONE
   textMeshProComponent: {fileID: 1586163524}
 --- !u!114 &1803187339
 MonoBehaviour:
