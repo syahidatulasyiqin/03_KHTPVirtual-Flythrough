@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_text: Title for each video
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2166,6 +2166,7 @@ GameObject:
   - component: {fileID: 1803187338}
   - component: {fileID: 1803187337}
   - component: {fileID: 1803187340}
+  - component: {fileID: 1803187341}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2278,6 +2279,18 @@ MonoBehaviour:
   playIcon: {fileID: 21300000, guid: 4ae8f74bcd2e3284a9e28231c12d203c, type: 3}
   pauseIcon: {fileID: 21300000, guid: c0fd6e432b01d9047819907e41e6ef30, type: 3}
   durationText: {fileID: 909535932}
+--- !u!114 &1803187341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803187334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cd69d9687c52f74681d769f2042efc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838651773
 GameObject:
   m_ObjectHideFlags: 0
