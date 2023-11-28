@@ -11,10 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/02_Console.unity
     guid: 121d6b520cd66e641838744a683d6d34
-  - enabled: 1
-    path: Assets/Scenes/03_Dynamic.unity
-    guid: 0dd978bf4d0721e44a760f3bc7154d65
-  - enabled: 1
-    path: Assets/Scenes/04_Industrial.unity
-    guid: f3eba5b5b065e694d9a848e4b4e4d80c
   m_configObjects: {}
