@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 304697591}
   - component: {fileID: 304697593}
   - component: {fileID: 304697592}
+  - component: {fileID: 304697594}
   m_Layer: 0
   m_Name: KHTP Logo
   m_TagString: Untagged
@@ -662,6 +663,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304697590}
   m_CullTransparentMesh: 1
+--- !u!114 &304697594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 273994acc38ff554ab02fa86ccf3394f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 10
 --- !u!1 &329441048
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,14 +838,14 @@ RectTransform:
   m_GameObject: {fileID: 409112457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.4, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 615, y: -629}
+  m_AnchoredPosition: {x: 641, y: -650}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409112459
@@ -910,7 +924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 34a42767046d50247b3cba0991ab1455, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 729e4dcc5936842409782b844c3191bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -960,7 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSceneName: 02_Console
-  selectedVideoIndex: 0
+  selectedVideoIndex: 3
 --- !u!1 &450358036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1019,7 @@ GameObject:
   - component: {fileID: 472165357}
   - component: {fileID: 472165356}
   - component: {fileID: 472165359}
+  - component: {fileID: 472165360}
   m_Layer: 0
   m_Name: urban
   m_TagString: Untagged
@@ -1021,14 +1036,14 @@ RectTransform:
   m_GameObject: {fileID: 472165354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.4, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 234, y: -630}
+  m_AnchoredPosition: {x: 270, y: -650}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472165356
@@ -1074,7 +1089,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 472165357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 472165360}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &472165357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eba13af3f6c0c6b4e90c5667b184a4ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2841eb49a7e99ee4bb100143d206f17f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1132,6 +1159,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &472165360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472165354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoSceneName: 02_Console
+  selectedVideoIndex: 2
 --- !u!1 &683630419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1462,6 @@ GameObject:
   - component: {fileID: 952419926}
   - component: {fileID: 952419925}
   - component: {fileID: 952419924}
-  - component: {fileID: 952419927}
   - component: {fileID: 952419928}
   m_Layer: 0
   m_Name: Industrial
@@ -1439,14 +1479,14 @@ RectTransform:
   m_GameObject: {fileID: 952419922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.5, z: 0}
+  m_LocalScale: {x: 1.2, y: 0.9, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 615.7092, y: -199.47702}
+  m_AnchoredPosition: {x: 639, y: -214}
   m_SizeDelta: {x: 909.89, y: 668.291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952419924
@@ -1525,7 +1565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19377f94bd478764b83cb39666877296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1ec28b39fb2ccc43a9cb7a2e4518c32, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1543,20 +1583,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952419922}
   m_CullTransparentMesh: 1
---- !u!114 &952419927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952419922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
-  selectedVideoIndex: 0
 --- !u!95 &952419928
 Animator:
   serializedVersion: 3
@@ -1774,6 +1800,7 @@ GameObject:
   - component: {fileID: 1494209746}
   - component: {fileID: 1494209745}
   - component: {fileID: 1494209748}
+  - component: {fileID: 1494209749}
   m_Layer: 0
   m_Name: residential
   m_TagString: Untagged
@@ -1790,15 +1817,15 @@ RectTransform:
   m_GameObject: {fileID: 1494209743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.05, y: 1, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1492, y: -465}
-  m_SizeDelta: {x: 740.876, y: 600}
+  m_AnchoredPosition: {x: 1492, y: -475}
+  m_SizeDelta: {x: 700, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494209745
 MonoBehaviour:
@@ -1843,7 +1870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1494209746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1494209749}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1494209746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,7 +1903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b4a91b421e61a340a7e884d6be92f1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3543efe31e17475469158fe574380d29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1901,6 +1940,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1494209749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494209743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoSceneName: 02_Console
+  selectedVideoIndex: 6
 --- !u!1 &1641857532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2241,7 @@ GameObject:
   - component: {fileID: 1803187335}
   - component: {fileID: 1803187337}
   - component: {fileID: 1803187338}
+  - component: {fileID: 1803187339}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2245,6 +2299,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd69d9687c52f74681d769f2042efc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1803187339
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803187334}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d1e790e422960c041af7d9850466c646, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1838651773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,6 +2525,7 @@ GameObject:
   - component: {fileID: 2012013003}
   - component: {fileID: 2012013002}
   - component: {fileID: 2012013005}
+  - component: {fileID: 2012013006}
   m_Layer: 0
   m_Name: institutional
   m_TagString: Untagged
@@ -2391,14 +2542,14 @@ RectTransform:
   m_GameObject: {fileID: 2012013000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.4, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 995, y: -628}
+  m_AnchoredPosition: {x: 1006, y: -650}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012013002
@@ -2444,7 +2595,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2012013003}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2012013006}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2012013003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2465,7 +2628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3ebe867ec5bef949a67ecbcf710dafc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d076344b63361245ad21584e4c012cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2502,6 +2665,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2012013006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012013000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoSceneName: 02_Console
+  selectedVideoIndex: 4
 --- !u!1 &2142152189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2692,7 @@ GameObject:
   - component: {fileID: 2142152192}
   - component: {fileID: 2142152191}
   - component: {fileID: 2142152194}
+  - component: {fileID: 2142152195}
   m_Layer: 0
   m_Name: amenity
   m_TagString: Untagged
@@ -2531,14 +2709,14 @@ RectTransform:
   m_GameObject: {fileID: 2142152189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1183994, y: 1.118399, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1493, y: -106}
+  m_AnchoredPosition: {x: 1493, y: -96}
   m_SizeDelta: {x: 700, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142152191
@@ -2584,7 +2762,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142152192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2142152195}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2142152192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,7 +2795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d31d04b936b4ed24e9f2dc41c04be921, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 234110a1ad7737f478cdfc7b2f0480ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2642,3 +2832,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2142152195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142152189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoSceneName: 02_Console
+  selectedVideoIndex: 5

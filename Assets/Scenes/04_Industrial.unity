@@ -989,15 +989,15 @@ RectTransform:
   m_GameObject: {fileID: 571957725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1313, y: -484}
-  m_SizeDelta: {x: 800, y: 614.042}
+  m_AnchoredPosition: {x: 1254, y: -485}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571957727
 MonoBehaviour:
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSceneName: 02_Console
-  selectedVideoIndex: 0
+  selectedVideoIndex: 10
 --- !u!114 &571957728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,7 +1056,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 571957729}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 571957727}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &571957729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,7 +1089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19377f94bd478764b83cb39666877296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6f16b755bfba9d4fbfa3581602ac861, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1421,15 +1433,15 @@ RectTransform:
   m_GameObject: {fileID: 952419922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 598.62146, y: -102.72304}
-  m_SizeDelta: {x: 800, y: 614.042}
+  m_AnchoredPosition: {x: 625, y: -100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952419924
 MonoBehaviour:
@@ -1474,7 +1486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952419925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 952419927}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &952419925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,7 +1519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19377f94bd478764b83cb39666877296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d0d0ab4b58b52042aad1df3aacf6c8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1526,7 +1550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSceneName: 02_Console
-  selectedVideoIndex: 0
+  selectedVideoIndex: 7
 --- !u!95 &952419928
 Animator:
   serializedVersion: 3
@@ -1576,15 +1600,15 @@ RectTransform:
   m_GameObject: {fileID: 1209407808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1315, y: -100}
-  m_SizeDelta: {x: 800, y: 614.042}
+  m_AnchoredPosition: {x: 1256, y: -100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209407810
 MonoBehaviour:
@@ -1599,7 +1623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSceneName: 02_Console
-  selectedVideoIndex: 0
+  selectedVideoIndex: 8
 --- !u!114 &1209407811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,7 +1667,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1209407812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1209407810}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1209407812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1664,7 +1700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19377f94bd478764b83cb39666877296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d95ee0cd48fca24eb41fc83f7830334, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1914,15 +1950,15 @@ RectTransform:
   m_GameObject: {fileID: 1455371950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.6, z: 0}
   m_Children: []
   m_Father: {fileID: 1321670820}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 593, y: -481}
-  m_SizeDelta: {x: 800, y: 614.042}
+  m_AnchoredPosition: {x: 623, y: -485}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455371952
 MonoBehaviour:
@@ -1937,7 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSceneName: 02_Console
-  selectedVideoIndex: 0
+  selectedVideoIndex: 9
 --- !u!114 &1455371953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1981,7 +2017,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1455371954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1455371952}
+        m_TargetAssemblyTypeName: VideoSelection, Assembly-CSharp
+        m_MethodName: PlaySelectedVideo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1455371954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,7 +2050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19377f94bd478764b83cb39666877296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c6d735fe0be0bd41af7aa81ae441f44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2194,6 +2242,7 @@ GameObject:
   - component: {fileID: 1803187335}
   - component: {fileID: 1803187337}
   - component: {fileID: 1803187338}
+  - component: {fileID: 1803187339}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2251,6 +2300,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd69d9687c52f74681d769f2042efc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1803187339
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803187334}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d1e790e422960c041af7d9850466c646, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1838651773
 GameObject:
   m_ObjectHideFlags: 0
