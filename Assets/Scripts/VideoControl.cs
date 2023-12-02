@@ -11,6 +11,8 @@ public class VideoControl : MonoBehaviour
     public Sprite pauseIcon;
     public Text durationText;
 
+    public float seekDuration = 5f; // Duration to seek forward or backward
+
     private bool videoEnded = false;
 
     private void Start()
@@ -38,7 +40,7 @@ public class VideoControl : MonoBehaviour
     private void OnVideoEnded(VideoPlayer vp)
     {
         // Replace "YourSceneName" with the actual scene name you want to load after the video ends.
-        SceneManager.LoadScene("01_Landing");
+        SceneManager.LoadScene("01_Landing 1");
     }
 
     public void PlayPauseVideo()
@@ -60,6 +62,42 @@ public class VideoControl : MonoBehaviour
         videoPlayer.frame = 0;  // Set the frame to 0 to start from the beginning
         videoPlayer.Play();  // Play the video
         UpdatePlayPauseButtonImage();  // Update the play/pause button image
+    }
+
+    public void FastForward()
+    {
+        videoPlayer.Pause(); // Pause the video
+
+        // Calculate the new time to seek forward
+        double newTime = videoPlayer.time + seekDuration;
+        if (newTime < videoPlayer.length)
+        {
+            videoPlayer.time = newTime; // Seek the video forward
+        }
+
+        videoPlayer.Play(); // Resume playing
+
+        // Update UI or perform other tasks if needed
+    }
+
+    public void Rewind()
+    {
+        videoPlayer.Pause(); // Pause the video
+
+        // Calculate the new time to seek backward
+        double newTime = videoPlayer.time - seekDuration;
+        if (newTime > 0)
+        {
+            videoPlayer.time = newTime; // Seek the video backward
+        }
+        else
+        {
+            videoPlayer.time = 0; // Rewind to the beginning if seeking beyond start
+        }
+
+        videoPlayer.Play(); // Resume playing
+
+        // Update UI or perform other tasks if needed
     }
 
     private void UpdatePlayPauseButtonImage()

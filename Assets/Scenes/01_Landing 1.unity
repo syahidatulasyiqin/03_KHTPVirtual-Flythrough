@@ -250,7 +250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35332946
@@ -393,7 +393,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d1e790e422960c041af7d9850466c646, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -581,7 +581,7 @@ Canvas:
   m_GameObject: {fileID: 103201829}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1838651776}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -683,8 +683,8 @@ Canvas:
   m_GameObject: {fileID: 194334476}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1317813424}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 1
 --- !u!1 &450358036
 GameObject:
@@ -1177,7 +1177,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 601760326}
-  - component: {fileID: 601760325}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -1185,20 +1184,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &601760325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601760324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d04a93de116b8f47ad5bdcfa08efcef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 68502033}
-  background: {fileID: 8300000, guid: d1e790e422960c041af7d9850466c646, type: 3}
 --- !u!4 &601760326
 Transform:
   m_ObjectHideFlags: 0
@@ -1635,7 +1620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 0
 --- !u!95 &952419928
 Animator:
@@ -1717,7 +1702,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -2144,7 +2129,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -2342,7 +2327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 8
 --- !u!114 &2751907348129089071
 MonoBehaviour:
@@ -2471,7 +2456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 9
 --- !u!114 &2751907348509141469
 MonoBehaviour:
@@ -2844,7 +2829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 10
 --- !u!95 &2751907348948146484
 Animator:
@@ -2971,7 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 7
 --- !u!1 &2751907348948146494
 GameObject:
@@ -3632,7 +3617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 6
 --- !u!95 &6343753441680367383
 Animator:
@@ -3733,7 +3718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 5
 --- !u!95 &6343753442261233089
 Animator:
@@ -4026,7 +4011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 4
 --- !u!95 &6343753442399758862
 Animator:
@@ -4295,7 +4280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 3
 --- !u!95 &6343753442777384013
 Animator:
@@ -4519,7 +4504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751de6992c410b84a832c6d5aa1b597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoSceneName: 02_Console
+  videoSceneName: 02_Console 1
   selectedVideoIndex: 2
 --- !u!114 &6343753442865452248
 MonoBehaviour:
