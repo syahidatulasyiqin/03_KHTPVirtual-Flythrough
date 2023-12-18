@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 48ea459770d49664097fdff857284712
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bison
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 735083a2c22e40c45b575cc5f046ffb0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

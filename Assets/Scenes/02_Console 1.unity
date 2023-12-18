@@ -1878,7 +1878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -67}
+  m_AnchoredPosition: {x: 548, y: -63}
   m_SizeDelta: {x: 910, y: 123.552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586163524
@@ -1903,8 +1903,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title for each video
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 59983c410fbde06458c715954a1ab9ae, type: 2}
+  m_sharedMaterial: {fileID: -7927730601523207533, guid: 59983c410fbde06458c715954a1ab9ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1928,8 +1928,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2531,7 +2531,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Videos/virtualflythrough/01.mp4
+  m_Url: file://C:/Virtual Flythrough/Videos/00.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -2554,17 +2554,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoFilePaths:
-  - C:/Videos/virtualflythrough/01.mp4
-  - C:/Videos/virtualflythrough/02.mp4
-  - C:/Videos/virtualflythrough/03.mp4
-  - C:/Videos/virtualflythrough/04.mp4
-  - C:/Videos/virtualflythrough/05.mp4
-  - C:/Videos/virtualflythrough/06.mp4
-  - C:/Videos/virtualflythrough/07.mp4
-  - C:/Videos/virtualflythrough/08.mp4
-  - C:/Videos/virtualflythrough/09.mp4
-  - C:/Videos/virtualflythrough/10.mp4
-  - C:/Videos/virtualflythrough/11.mp4
+  - C:/Virtual Flythrough/Videos/00.mp4
+  - C:/Virtual Flythrough/Videos/01.mp4
+  - C:/Virtual Flythrough/Videos/02.mp4
+  - C:/Virtual Flythrough/Videos/03.mp4
+  - C:/Virtual Flythrough/Videos/04.mp4
+  - C:/Virtual Flythrough/Videos/05.mp4
+  - C:/Virtual Flythrough/Videos/06.mp4
+  - C:/Virtual Flythrough/Videos/07.mp4
+  - C:/Virtual Flythrough/Videos/08.mp4
+  - C:/Virtual Flythrough/Videos/09.mp4
+  - C:/Virtual Flythrough/Videos/10.mp4
   videoTitles:
   - OVERALL VIEW
   - FUTURE DEVELOPMENT
