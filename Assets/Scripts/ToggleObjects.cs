@@ -13,7 +13,7 @@ public class ToggleObjects : MonoBehaviour
 
     IEnumerator ToggleWithDelay()
     {
-        yield return new WaitForSeconds(2f); // Adjust the delay time here (2 seconds in this case)
+        yield return new WaitForSeconds(1f); // Adjust the delay time here (2 seconds in this case)
 
         if (gameObjectToActivate != null)
         {

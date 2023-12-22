@@ -12,6 +12,7 @@ public class VideoPlayerController : MonoBehaviour
     public string[] videoTitles; // Array of video titles
 
     public TextMeshProUGUI textMeshProComponent; // Reference to the TextMeshPro component
+    public TextMeshProUGUI textMeshProComponent2; // Reference to the TextMeshPro component
 
     void Start()
     {
@@ -32,6 +33,7 @@ public class VideoPlayerController : MonoBehaviour
         {
             // Set the TextMeshPro text to the corresponding video title
             textMeshProComponent.text = videoTitles[selectedVideoIndex];
+            textMeshProComponent2.text = videoTitles[selectedVideoIndex];
         }
     }
 }

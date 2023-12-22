@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class VideoControl : MonoBehaviour
 {
@@ -15,10 +17,22 @@ public class VideoControl : MonoBehaviour
 
     private bool videoEnded = false;
 
+    public AudioSource[] AudioSource;
+    public int selectedVideoIndex;
+
+    private AudioSource currectAudioSource;
+
     private void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         playPauseButtonImage = GameObject.Find("PlayPauseButton").GetComponent<Image>();
+
+        selectedVideoIndex = PlayerPrefs.GetInt("SelectedVideoIndex", 0);
+        if (selectedVideoIndex >= 0 && selectedVideoIndex < AudioSource.Length)
+        {
+            currectAudioSource = AudioSource[selectedVideoIndex];
+            currectAudioSource.Play();
+        }
 
         UpdatePlayPauseButtonImage();
         DisplayRemainingTime(videoPlayer.length);
@@ -39,8 +53,40 @@ public class VideoControl : MonoBehaviour
 
     private void OnVideoEnded(VideoPlayer vp)
     {
-        // Replace "YourSceneName" with the actual scene name you want to load after the video ends.
+        Animator audioAnimator = currectAudioSource.GetComponent<Animator>();
+        if (audioAnimator != null)
+        {
+            audioAnimator.SetTrigger("fadeOut");
+        }
+
+        StartCoroutine(DelayBeforeLoadingScene());
+    }
+
+    private IEnumerator DelayBeforeLoadingScene()
+    {
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+
         SceneManager.LoadScene("01_Landing 1");
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        Animator audioAnimator = currectAudioSource.GetComponent<Animator>();
+        if (audioAnimator != null)
+        {
+            audioAnimator.SetTrigger("fadeOut");
+        }
+
+        StartCoroutine(DelayAndLoadScene(sceneName, 3f));
+    }
+
+    private IEnumerator DelayAndLoadScene(string sceneName, float delayTime)
+    {
+        // Wait for the specified delay time
+        yield return new WaitForSeconds(delayTime);
+
+        // Load the scene after the delay
+        SceneManager.LoadScene(sceneName);
     }
 
     public void PlayPauseVideo()
