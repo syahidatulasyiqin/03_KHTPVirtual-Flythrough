@@ -7,7 +7,7 @@ public class ChangeApplication : MonoBehaviour
     // Function to be called when the button is clicked.
     public void ChangeScene(string sceneName)
     {
-        StartCoroutine(DelayAndLoadScene(sceneName, 3.0f));
+        StartCoroutine(DelayAndLoadScene(sceneName, 1.0f));
     }
 
     private IEnumerator DelayAndLoadScene(string sceneName, float delayTime)

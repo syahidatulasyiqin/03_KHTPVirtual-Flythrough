@@ -21,6 +21,8 @@ public class VideoControl : MonoBehaviour
     public int selectedVideoIndex;
 
     private AudioSource currectAudioSource;
+    public Animator targetAnimator;
+    public string triggerParameter = "fadeOut";
 
     private void Start()
     {
@@ -57,6 +59,7 @@ public class VideoControl : MonoBehaviour
         if (audioAnimator != null)
         {
             audioAnimator.SetTrigger("fadeOut");
+            targetAnimator.SetTrigger(triggerParameter);
         }
 
         StartCoroutine(DelayBeforeLoadingScene());
@@ -64,7 +67,7 @@ public class VideoControl : MonoBehaviour
 
     private IEnumerator DelayBeforeLoadingScene()
     {
-        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        yield return new WaitForSeconds(3f); // Wait for 1 seconds
 
         SceneManager.LoadScene("01_Landing 1");
     }
@@ -74,6 +77,7 @@ public class VideoControl : MonoBehaviour
         Animator audioAnimator = currectAudioSource.GetComponent<Animator>();
         if (audioAnimator != null)
         {
+            targetAnimator.SetTrigger(triggerParameter);
             audioAnimator.SetTrigger("fadeOut");
         }
 

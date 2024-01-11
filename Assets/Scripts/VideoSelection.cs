@@ -21,7 +21,7 @@ public class VideoSelection : MonoBehaviour
     private IEnumerator DelayBeforeLoadingScene()
     {
         musicAnim.SetTrigger("fadeOut");
-        // Wait for 2 seconds
+ 
         yield return new WaitForSeconds(waitTime);
 
         // Load the video scene after the delay
