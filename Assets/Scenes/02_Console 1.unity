@@ -1291,8 +1291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 369, y: -113.925995}
-  m_SizeDelta: {x: 532.681, y: 135.405}
+  m_AnchoredPosition: {x: 635.8668, y: -113.925995}
+  m_SizeDelta: {x: 1094.506, y: 135.405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245216042
 MonoBehaviour:
@@ -4941,6 +4941,7 @@ MonoBehaviour:
   - C:/Virtual Flythrough/Videos/11.mp4
   - C:/Virtual Flythrough/Videos/12.mp4
   - C:/Virtual Flythrough/Videos/13.mp4
+  - C:/Virtual Flythrough/Videos/14.mp4
   videoTitles:
   - OVERALL VIEW
   - FUTURE DEVELOPMENT
@@ -4956,6 +4957,7 @@ MonoBehaviour:
   - INDUSTRIAL
   - NATURE
   - SPACE
+  - OVERALL INDUSTRIAL ZONE
   textMeshProComponent: {fileID: 1586163524}
   textMeshProComponent2: {fileID: 245216042}
 --- !u!114 &1803187339
@@ -5000,6 +5002,7 @@ MonoBehaviour:
   - {fileID: 1564114780}
   - {fileID: 40486973}
   - {fileID: 513145144}
+  - {fileID: 1283375900}
   - {fileID: 1283375900}
   selectedVideoIndex: 0
   targetAnimator: {fileID: 194334481}
